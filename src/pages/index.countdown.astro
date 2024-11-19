@@ -1,0 +1,61 @@
+<div class="flex gap-5 justify-center select-none">
+	<div>
+		<span class="countdown font-mono text-5xl">
+			<span id="countdown-mo" style="--value:00;"></span>
+		</span>
+		miesięcy
+	</div>
+	<div>
+		<span class="countdown font-mono text-5xl">
+			<span id="countdown-dd" style="--value:00;"></span>
+		</span>
+		dni
+	</div>
+	<div>
+		<span class="countdown font-mono text-5xl">
+			<span id="countdown-hh" style="--value:00;"></span>
+		</span>
+		godzin
+	</div>
+	<div>
+		<span class="countdown font-mono text-5xl">
+			<span id="countdown-mm" style="--value:00;"></span>
+		</span>
+		minut
+	</div>
+	<div>
+		<span class="countdown font-mono text-5xl">
+			<span id="countdown-ss" style="--value:00;"></span>
+		</span>
+		sekund
+	</div>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const origin = new Date("2024-12-01 GMT+1");
+
+		const mo$ = document.querySelector<HTMLSpanElement>("#countdown-mo")!;
+		const dd$ = document.querySelector<HTMLSpanElement>("#countdown-dd")!;
+		const hh$ = document.querySelector<HTMLSpanElement>("#countdown-hh")!;
+		const mm$ = document.querySelector<HTMLSpanElement>("#countdown-mm")!;
+		const ss$ = document.querySelector<HTMLSpanElement>("#countdown-ss")!;
+
+		setInterval(() => {
+			const now = new Date();
+			const dif = new Date(now.getTime() - origin.getTime());
+
+			const mo = dif.getUTCMonth();
+			const dd = dif.getUTCDate();
+			const hh = dif.getUTCHours();
+			const mm = dif.getUTCMinutes();
+			const ss = dif.getUTCSeconds();
+
+			mo$.setAttribute("style", `--value:${mo}`);
+			dd$.setAttribute("style", `--value:${dd}`);
+			hh$.setAttribute("style", `--value:${hh}`);
+			mm$.setAttribute("style", `--value:${mm}`);
+			ss$.setAttribute("style", `--value:${ss}`);
+		}, 1000);
+	});
+</script>

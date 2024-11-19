@@ -1,0 +1,23 @@
+---
+import Countdown from "./index.countdown.astro";
+---
+
+<div
+	class="hero min-h-screen"
+	style="background-image: url(https://images.pexels.com/photos/240174/pexels-photo-240174.jpeg);"
+>
+	<div class="hero-overlay bg-opacity-60 backdrop-blur-sm"></div>
+	<div class="hero-content text-neutral-content text-center">
+		<div class="max-w-md">
+			<h1 class="mb-5 text-5xl font-bold" style="text-shadow: 0 0 16px #141414;">
+				Kryzys Zdrowia <span class="text-error">Psychicznego</span>
+			</h1>
+			<p class="mb-5 text-xl" style="text-shadow: 0 0 12px #141414;">
+				<b>Środowiskowe Centra Zdrowia Psychicznego</b> czekają na pomoc z
+				<b>Ministerstwa Zdrowia</b>
+			</p>
+			<Countdown />
+			<button class="btn btn-primary mt-5 text-xl">Dowiedz się więcej</button>
+		</div>
+	</div>
+</div>
