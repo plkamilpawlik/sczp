@@ -33,7 +33,7 @@
 
 <script>
 	document.addEventListener("DOMContentLoaded", () => {
-		const origin = new Date("2024-12-01 GMT+1");
+		const origin = new Date("2024-12-01");
 
 		const mo$ = document.querySelector<HTMLSpanElement>("#countdown-mo")!;
 		const dd$ = document.querySelector<HTMLSpanElement>("#countdown-dd")!;
@@ -51,11 +51,11 @@
 			const mm = dif.getUTCMinutes();
 			const ss = dif.getUTCSeconds();
 
-			mo$.setAttribute("style", `--value:${mo}`);
-			dd$.setAttribute("style", `--value:${dd}`);
-			hh$.setAttribute("style", `--value:${hh}`);
-			mm$.setAttribute("style", `--value:${mm}`);
-			ss$.setAttribute("style", `--value:${ss}`);
+			mo$.style.setProperty("--value", mo.toString());
+			dd$.style.setProperty("--value", dd.toString());
+			hh$.style.setProperty("--value", hh.toString());
+			mm$.style.setProperty("--value", mm.toString());
+			ss$.style.setProperty("--value", ss.toString());
 
 			return Promise.resolve();
 		};

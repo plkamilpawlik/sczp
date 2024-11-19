@@ -24,12 +24,12 @@ Spotkania i narady organizowane w celu omówienia sytuacji ŚCZP nie przyniosły
 
 ---
 
-[^1]: https://bip.umww.pl/artykuly/2826693/pliki/20201208154622\_2932.pdf
+[^1]: [bip.umww.pl](https://bip.umww.pl/artykuly/2826693/pliki/20201208154622_2932.pdf)
 
-[^2]: https://wrpo.wielkopolskie.pl/faq/poddzialanie-7-2-2-uslugi-spoleczne-i-zdrowotne-projekty-konkursowe/rpwp-07-02-02-iz-00-30-002-21
+[^2]: [wrpo.wielkopolskie.pl](https://wrpo.wielkopolskie.pl/faq/poddzialanie-7-2-2-uslugi-spoleczne-i-zdrowotne-projekty-konkursowe/rpwp-07-02-02-iz-00-30-002-21)
 
-[^3]: https://www.przegladkoninski.pl/PL-H5/3/32469/burza-wokol-centrum-zdrowia-psychicznego-dla-dzieci-i-mlodziezy.html
+[^3]: [www.przegladkoninski.pl](https://www.przegladkoninski.pl/PL-H5/3/32469/burza-wokol-centrum-zdrowia-psychicznego-dla-dzieci-i-mlodziezy.html)
 
-[^4]: https://poznan.wyborcza.pl/poznan/7,36001,30460312,koniec-terapii-3-5-tys-pacjentow-zostalo-na-lodzie-kolejne.html
+[^4]: [poznan.wyborcza.pl](https://poznan.wyborcza.pl/poznan/7,36001,30460312,koniec-terapii-3-5-tys-pacjentow-zostalo-na-lodzie-kolejne.html)
 
-[^5]: https://www.nik.gov.pl/najnowsze-informacje-o-wynikach-kontroli/psychiatria-dziecieca.html
+[^5]: [www.nik.gov.pl](https://www.nik.gov.pl/najnowsze-informacje-o-wynikach-kontroli/psychiatria-dziecieca.html)
