@@ -41,7 +41,7 @@
 		const mm$ = document.querySelector<HTMLSpanElement>("#countdown-mm")!;
 		const ss$ = document.querySelector<HTMLSpanElement>("#countdown-ss")!;
 
-		setInterval(() => {
+		const update = (): Promise<void> => {
 			const now = new Date();
 			const dif = new Date(now.getTime() - origin.getTime());
 
@@ -56,6 +56,10 @@
 			hh$.setAttribute("style", `--value:${hh}`);
 			mm$.setAttribute("style", `--value:${mm}`);
 			ss$.setAttribute("style", `--value:${ss}`);
-		}, 1000);
+
+			return Promise.resolve();
+		};
+
+		update().then(() => setInterval(update, 1000));
 	});
 </script>
