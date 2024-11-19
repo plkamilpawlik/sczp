@@ -12,12 +12,15 @@ import Countdown from "./index.countdown.astro";
 			<h1 class="mb-5 text-5xl font-bold" style="text-shadow: 0 0 16px #141414;">
 				Kryzys Zdrowia <span class="text-error">Psychicznego</span>
 			</h1>
-			<p class="mb-5 text-xl" style="text-shadow: 0 0 12px #141414;">
-				<b>Środowiskowe Centra Zdrowia Psychicznego</b> czekają na pomoc z
-				<b>Ministerstwa Zdrowia</b>
+			<p class="mb-5 text-lg md:text-xl" style="text-shadow: 0 0 12px #141414;">
+				<b>Środowiskowe Centra Zdrowia Psychicznego</b>
+				dla dzieci i młodzieży czekają na pomoc z Ministerstwa Zdrowia już od
 			</p>
 			<Countdown />
-			<button class="btn btn-primary mt-5 text-xl">Dowiedz się więcej</button>
+			<div class="flex flex-col gap-2 max-w-xs mx-auto mt-5">
+				<a href="/wiecej" class="btn btn-outline text-xl">Dowiedz się więcej</a>
+				<a href="/raport" class="btn btn-outline text-xl">Przeczytaj raport</a>
+			</div>
 		</div>
 	</div>
 </div>
