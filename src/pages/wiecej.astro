@@ -1,18 +1,20 @@
 ---
-import Content from '../md/wiecej.md';
+import Content from "../md/wiecej.md";
+import Meta from "./index.meta.astro";
 ---
 
 <html lang="pl">
 	<head>
-		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<Meta />
 		<title>Kryzys Zdrowia Psychicznego | Działalność ŚCZP</title>
 	</head>
 	<body class="px-4 py-12">
 		<article class="prose prose-lg mx-auto">
-            <Content />
+			<Content />
 			<hr />
 			<section class="flex justify-center">
 				<a href="/" class="btn btn-outline btn-wide text-lg">Powrót</a>

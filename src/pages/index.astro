@@ -1,19 +1,18 @@
 ---
 import Hero from "./index.hero.astro";
+import Meta from "./index.meta.astro";
 ---
 
 <html lang="pl">
 	<head>
-		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<Meta />
 		<title>Kryzys Zdrowia Psychicznego</title>
 	</head>
-	<body
-		class="bg-cover bg-center"
-		style="background-image: url(https://images.pexels.com/photos/240174/pexels-photo-240174.jpeg);"
-	>
+	<body class="bg-cover bg-center" style="background-image:url(/background.jpg);">
 		<Hero />
 	</body>
 </html>
