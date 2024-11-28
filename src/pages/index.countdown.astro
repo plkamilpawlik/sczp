@@ -32,9 +32,9 @@
 </div>
 
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const origin = new Date("2023-12-01T00:00:00.000+01:00");
+    import dayjs from "dayjs";
 
+	document.addEventListener("DOMContentLoaded", () => {
 		const mo$ = document.querySelector<HTMLSpanElement>("#countdown-mo")!;
 		const dd$ = document.querySelector<HTMLSpanElement>("#countdown-dd")!;
 		const hh$ = document.querySelector<HTMLSpanElement>("#countdown-hh")!;
@@ -42,14 +42,13 @@
 		const ss$ = document.querySelector<HTMLSpanElement>("#countdown-ss")!;
 
 		const update = (): Promise<void> => {
-			const now = new Date();
-			const dif = new Date(now.getTime() - origin.getTime());
+            const today = dayjs();
 
-			const mo = dif.getUTCMonth();
-			const dd = dif.getUTCDate();
-			const hh = dif.getUTCHours();
-			const mm = dif.getUTCMinutes();
-			const ss = dif.getUTCSeconds();
+			const mo = today.diff(dayjs("2023-12-01"), "months");
+			const dd = today.get("date") - 1;
+			const hh = today.get("hour");
+			const mm = today.get("minutes");
+			const ss = today.get("second");
 
 			mo$.style.setProperty("--value", mo.toString());
 			dd$.style.setProperty("--value", dd.toString());
